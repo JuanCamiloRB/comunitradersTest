@@ -1,6 +1,43 @@
 
 <template>
      <div id="home"></div>
+<!-- Start navbar -->
+     <div class="navbar">
+      <div class="navbar-left">
+        <img src="../assets/Logo.svg"/>
+      </div>
+      <div class="navbar-middle">
+        <ul>
+          <li><a href="#">FOREX</a></li>
+          <li><a href="#">STOCKS</a></li>
+          <li><a href="#">FUTURES</a></li>
+          <li><a href="#">TradeGATEHub</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Log in</a>
+            <div class="dropdown-content">
+              <a href="#">Suboption 1</a>
+              <a href="#">Suboption 2</a>
+              <a href="#">Suboption 3</a>
+            </div>
+          </li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="dropdown">
+            <a href="#">English</a>
+            <div class="dropdown-content">
+              <a href="#">Suboption 4</a>
+              <a href="#">Suboption 5</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+<!-- finish navbar -->
+
+
         <div class="landing-page">
         <div class="left-section">
             <img src="../assets/Mask Group 1.png" alt="Left Background Image" />
@@ -179,9 +216,78 @@
   height: 55px;
 
 }
+.navbar {
+  height: 119px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  font-family: 'Your Font', sans-serif; /* Replace 'Your Font' with the actual font name */
+  letter-spacing: 1px;
+}
 
+.navbar-left img {
+  width: 364.9px; /* Adjust the width of your logo */
+  height: 55.8px; /* Maintain aspect ratio */
+}
 
+.navbar-middle ul,
+.navbar-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
+.navbar-middle li,
+.navbar-right li {
+  margin: 0 10px;
+}
+
+.navbar-middle a,
+.navbar-right a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-middle a:hover,
+.navbar-right a:hover {
+  color: #2ecc71; /* Change the color on hover */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #2ecc71; /* Change the background color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   
   /* Add more styling as needed */
   

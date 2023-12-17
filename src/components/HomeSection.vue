@@ -86,27 +86,25 @@
   }
   
   .left-section,
-  .right-section {
-    flex: 1;
-  min-height: 50vh; /* Set a minimum height for each section */
+.right-section {
+  flex: 1;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #b17373; /* Set the text color */
-  font-size: 24px; /* Set the font size */
+  color: #b17373;
+  font-size: 4vw; /* Ajusta el tamaño de fuente en función del ancho de la pantalla */
+}
 
-  }
-  
-  .left-section {
-   
-    background-image: url("../assets/Mask Group 1.png");
-    width: 840px;
-  }
-  
-  .right-section {
-    background-color: #181F29;  /* Set the background color for the left section */ 
-    width: 1079px;
-  }
+.left-section {
+  background-image: url("../assets/Mask Group 1.png");
+  width: 100%; /* Usa el 100% del ancho del contenedor padre */
+}
+
+.right-section {
+  background-color: #181F29;
+  width: 100%;
+}
 
   .content {
   text-align: center;

@@ -37,41 +37,69 @@
     </div>
 <!-- finish navbar -->
 
-
-        <div class="landing-page">
-        <div class="left-section">
-            <img src="../assets/Mask Group 1.png" alt="Left Background Image" />
-            <!-- Content for the left section goes here -->
-        </div>
-        <div class="right-section">
-            <div class="content">
-        <h1><img class ="custom.title" src="../assets/Group 30.png" alt="Left Background Image" /></h1>
-        <div class="title-separator"></div> <!-- Line separating the title and main description -->
-        <p class="main-description">  Tradeview’s CommuniTraders software lets our partners provide value-added copy trading to their clients.</p>
-        <div class="buttons">
-
-          <p class="button-descriptionl">  
-            Free Download for Tradeview Users
-          <button 
-            class="buttons-left">Contact your Broker
-            <span class="button-description"></span>
-         </button>
-         </p>
-         <div class="separator-line"></div> 
-         <p class="button-descriptionr">  
-          Don’t have a Tradeview Account yet?
-          <button 
-             class="buttons-right">Get a Free Demo
-           
-          </button>
-        </p>
-        </div>
+ <!-- Start navbar 2 -->
+ <div class="navbar navbar2">
+      <div class="navbar-left">
+        <!-- Add your logo or other content here if needed -->
+      </div>
+      <div class="navbar-middle">
+        <ul>
+          <li><a href="#">Markets</a></li>
+          <li class="dropdown"><a href="#">Company </a></li>
+          <li><a href="#">Accounts</a>
+            <div class="dropdown-content">
+              <a href="#">Suboption 1</a>
+              <a href="#">Suboption 2</a>
+              <a href="#">Suboption 3</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#">Platforms</a></li>
+          <li><a href="#">Pricing</a>
+            <div class="dropdown-content">
+              <a href="#">Suboption 4</a>
+              <a href="#">Suboption 5</a>
+            </div>
+          </li>
+          <li><a href="#">Introducing Brokers</a></li>
+          <li><a href="#">Education</a></li>
+          <li class="dropdown"><a href="#">Support</a>
+            <div class="dropdown-content">
+              <a href="#">Suboption 6</a>
+              <a href="#">Suboption 7</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
+    <!-- Finish navbar 2 -->
 
-            <!-- Content for the right section goes here -->
+<div class="landing-page">
+      <div class="left-section">
+        <img src="../assets/Mask Group 1.png" alt="Left Background Image" />
+        <!-- Content for the left section goes here -->
+      </div>
+      <div class="right-section">
+        <div class="content">
+          <h1><img class="custom.title" src="../assets/Group 30.png" alt="Left Background Image" /></h1>
+          <div class="title-separator"></div>
+          <!-- Line separating the title and main description -->
+          <p class="main-description">Tradeview’s CommuniTraders software lets our partners provide value-added copy trading to their clients.</p>
+          <div class="buttons">
+            <p class="button-descriptionl">
+              Free Download for Tradeview Users
+              <button class="buttons-left">Contact your Broker<span class="button-description"></span></button>
+            </p>
+            <div class="separator-line"></div>
+            <p class="button-descriptionr">
+              Don’t have a Tradeview Account yet?
+              <button class="buttons-right">Get a Free Demo</button>
+            </p>
+          </div>
         </div>
-        </div>
-  </template>
+        <!-- Content for the right section goes here -->
+      </div>
+    </div>
+</template>
   
   <script>
   export default {
@@ -98,12 +126,20 @@
 
 .left-section {
   background-image: url("../assets/Mask Group 1.png");
+  margin-bottom: 0px; /* Corregir la unidad de medida */
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   width: 100%; /* Usa el 100% del ancho del contenedor padre */
 }
 
 .right-section {
   background-color: #181F29;
-  width: 100%;
+  margin-bottom: 0px; /* Corregir la unidad de medida */
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%; /* Usa el 100% del ancho del contenedor padre */
 }
 
   .content {
@@ -120,25 +156,22 @@
   text-align: center;
 }
 .main-description {
-  margin-bottom: 20x; /* Space between the main title and description */
-  margin-top: 98.63px; /* Updated top margin */
-  margin-left: 207px; /* Updated left margin */
-  margin-right: 207px; /* Updated left margin */
-  /* Updated width */
-  height: 129px; /* Updated height */
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-32)/var(--unnamed-line-spacing-43) var(--unnamed-font-family-noto-sans);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  text-align: center;
+  margin-bottom: 20px; /* Corregir la unidad de medida */
+  margin-top: 98.63px;
+  margin-left: 207px;
+  margin-right: 207px;
+  height: 129px;
   font: normal normal 300 32px/43px Noto Sans;
   letter-spacing: 0px;
+  text-align: center;
   color: #FFFFFF;
 }
 
 .custom-title {
-  margin-top: 346px;
-  margin-left: 1170px;
-  width: 420px;
-  height: 118px;
+  margin-top: 20px; /* Adjust the margin for responsiveness */
+  margin-left: 0; /* Center the title horizontally */
+  width: 100%; /* Adjust width to 100% for responsiveness */
+  height: auto;
 }
 
 .buttons {
@@ -219,7 +252,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #181F29;
   padding: 10px;
   color: white;
   font-family: 'Your Font', sans-serif; /* Replace 'Your Font' with the actual font name */
@@ -227,7 +260,7 @@
 }
 
 .navbar-left img {
-  width: 364.9px; /* Adjust the width of your logo */
+  width: 100%; /* Adjust the width of your logo */
   height: 55.8px; /* Maintain aspect ratio */
 }
 
@@ -257,10 +290,62 @@
   color: #2ecc71; /* Change the color on hover */
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(to bottom, #0c0c0c, #eaeef0); /* Agrega un degradado de arriba hacia abajo */
+  transition: background 0.3s ease; /* Agrega transición para el cambio de fondo */
+  flex-grow: 1; /* Hace que la parte izquierda ocupe todo el espacio disponible */
 }
+
+
+.navbar2 .navbar-left {
+  background: linear-gradient(to bottom, #0c0c0c, #eaeef0); /* Agrega un degradado de arriba hacia abajo */
+  transition: background 0.3s ease; /* Agrega transición para el cambio de fondo */
+  flex-grow: 1; /* Hace que la parte izquierda ocupe todo el espacio disponible */
+}
+
+.navbar2:hover .navbar-left {
+  background: linear-gradient(to bottom, #121213, #f1f5f1);
+}
+
+  .navbar2 .navbar-right {
+    /* Add styles for the right section if needed */
+  }
+
+  .navbar2 ul {
+  list-style: none;
+  margin: 0; /* Ajusta el margen a 0 */
+  padding: 0;
+  display: flex;
+}
+
+  .navbar2 li {
+    margin-right: 70px; /* Change margin-left to margin-right */
+  }
+
+  .navbar2 a {
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+
+  .navbar2 li.dropdown::after {
+    content: '\25BC'; /* Unicode character for a down arrow */
+    font-size: 14px;
+    margin-left: 5px;
+  }
+ 
+  
+.dropdown::after {
+    content: '\25BC'; /* Unicode character for a down arrow */
+    font-size: 14px;
+    margin-left: 5px;
+  }
 
 .dropdown-content {
   display: none;
@@ -291,20 +376,31 @@
   
   /* Responsive styling for smaller screens */
   @media screen and (max-width: 768px) {
+    .landing-page {
+      flex-direction: column-reverse; /* Reverse the order on smaller screens */
+    }
+
     .left-section,
-  .right-section {
-    flex: 1 100%;
-    min-height: 30vh;
-    width: auto; /* Reset the width on smaller screens */
-  }
+    .right-section {
+      order: 1; /* Set order to control the placement of the sections */
+    }
+
+    .right-section {
+      order: 2; /* Set order to control the placement of the sections */
+    }
 
   .custom-title {
     margin: 20px 0;
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
   }
 
   .buttons button {
-    font-size: 16px;
-    margin-left: 0;
+    margin: 10px 0;
   }
-  }
+}
   </style>
